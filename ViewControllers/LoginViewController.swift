@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -14,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField:UITextField!
     @IBOutlet weak var loginButton:UIButton!
     @IBOutlet weak var clickLabel:UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,9 +24,9 @@ class LoginViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.handleTap))
         clickLabel.isUserInteractionEnabled = true
         clickLabel.addGestureRecognizer(tap)
-      
+        
     }
-
+    
     
     func setElements() {
         Utilities.styleTextField(emailField)
@@ -35,10 +36,10 @@ class LoginViewController: UIViewController {
     }
     
     @objc func handleTap(sender:UITapGestureRecognizer) {
-       
+        
         guard let viewController = storyboard?.instantiateViewController(identifier: "register") as? SignUpViewController else {
-                    return
-                }
+            return
+        }
         navigationController?.pushViewController(viewController, animated: true)
         
     }

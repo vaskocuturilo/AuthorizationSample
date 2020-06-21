@@ -9,19 +9,24 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var welcomeLabel:UILabel!
     @IBOutlet weak var logoutButton:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         setElements()
+        
+        setElements()
     }
-     
     
     func setElements() {
         
-           Utilities.styleFilledButton(logoutButton)
-       }
+        Utilities.styleFilledButton(logoutButton)
+    }
+    
+    @IBAction func logoutTapped(_ sender: Any) {
+        let mainController = storyboard?.instantiateViewController(identifier: "main") as? ViewController
+        view.window?.rootViewController = mainController
+        view.window?.makeKeyAndVisible()
+    }
 }

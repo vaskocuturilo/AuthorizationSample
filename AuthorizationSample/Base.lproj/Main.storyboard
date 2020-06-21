@@ -15,7 +15,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AuthorizationSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="ViewController" customModule="AuthorizationSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,8 +168,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-8o-fhp">
-                                <rect key="frame" x="40" y="220" width="295" height="420.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-8o-fhp">
+                                <rect key="frame" x="40" y="220" width="295" height="411"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTy-pB-EaK">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -177,30 +177,39 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-E4-h65">
-                                        <rect key="frame" x="0.0" y="80" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="295" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FsL-Ag-Lt2">
-                                        <rect key="frame" x="0.0" y="160" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="140" width="295" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMp-Xw-bmM">
-                                        <rect key="frame" x="0.0" y="240" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="210" width="295" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-5H-FyL">
+                                        <rect key="frame" x="0.0" y="280" width="295" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-E0-Lqb">
-                                        <rect key="frame" x="0.0" y="320" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="320.5" width="295" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="f3V-5S-VEb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="REGISTER"/>
+                                        <connections>
+                                            <action selector="signUpTapped" destination="g7S-bC-nI7" eventType="touchUpInside" id="rLx-AS-xid"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click for Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-WC-I8m">
-                                        <rect key="frame" x="0.0" y="400" width="295" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="390.5" width="295" height="20.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                         </accessibility>
@@ -232,6 +241,7 @@
                     <connections>
                         <outlet property="clickLabel" destination="mqB-WC-I8m" id="1pL-5f-XFP"/>
                         <outlet property="emailField" destination="fl3-E4-h65" id="CgX-FG-LUW"/>
+                        <outlet property="errorLabel" destination="rIL-5H-FyL" id="Sy2-ah-ubn"/>
                         <outlet property="nameField" destination="kTy-pB-EaK" id="jtE-hu-0mR"/>
                         <outlet property="passwordField" destination="FsL-Ag-Lt2" id="MKs-85-P33"/>
                         <outlet property="registerButton" destination="FeC-E0-Lqb" id="lLJ-xI-F5Y"/>
@@ -262,6 +272,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-Km-AZf">
                                         <rect key="frame" x="0.0" y="102" width="295" height="30"/>
                                         <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="logoutTapped:" destination="Ska-UR-k2y" eventType="touchUpInside" id="vbG-ec-8yj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -277,7 +290,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="logoutButton" destination="Xl0-Km-AZf" id="QWb-pS-WeX"/>
+                        <outlet property="logoutButton" destination="Xl0-Km-AZf" id="SyT-L3-V7A"/>
                         <outlet property="welcomeLabel" destination="xXs-Sv-4WH" id="hoy-EM-3y9"/>
                     </connections>
                 </viewController>
