@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
     
@@ -16,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var retypePassword:UITextField!
     @IBOutlet weak var registerButton:UIButton!
     @IBOutlet weak var clickLabel:UILabel!
+    @IBOutlet weak var errorLabel:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +26,30 @@ class SignUpViewController: UIViewController {
         setElements()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleTap))
-               clickLabel.isUserInteractionEnabled = true
-               clickLabel.addGestureRecognizer(tap)
+        clickLabel.isUserInteractionEnabled = true
+        clickLabel.addGestureRecognizer(tap)
+    }
+    
+    
+    func validateFields() -> String? {
+        
+        if nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill in all fields"
+        }
+        
+        let cleanPassword = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let retypeClenPassword = retypePassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanPassword) == false ||
+            Utilities.isPasswordValid(retypeClenPassword) == false {
+            
+            return "Please check your password!!!!!"
+        }
+        
+        return nil
     }
     
     
@@ -40,11 +65,56 @@ class SignUpViewController: UIViewController {
     }
     
     @objc func handleTap(sender:UITapGestureRecognizer) {
-       
+        
         guard let viewController = storyboard?.instantiateViewController(identifier: "login") as? LoginViewController else {
-                    return
-                }
+            return
+        }
         navigationController?.pushViewController(viewController, animated: true)
         
     }
+    
+    @IBAction func signUpTapped() {
+        
+        let error = validateFields()
+        
+        if error != nil {
+            showError(error!)
+        } else {
+            let name = nameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let email = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+                if err != nil {
+                    self.showError("Error createing user")
+                } else {
+                    let dataBase = Firestore.firestore()
+                    dataBase.collection("users").addDocument(data: ["name":name, "uid":result!.user.uid]) { (error) in
+                        if error != nil {
+                            self.showError("Can't saving user data")
+                        }
+                    }
+                }
+                //Transition
+                self.transitionToHome()
+            }
+        }
+        
+    }
+    
+    func showError(_ message:String){
+        errorLabel.text = message
+        errorLabel.alpha = 1
+        
+    }
+    
+    func transitionToHome(){
+        let homeController = storyboard?.instantiateViewController(identifier: Constans.StoryBoard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeController
+        view.window?.makeKeyAndVisible()
+    }
+    
 }
