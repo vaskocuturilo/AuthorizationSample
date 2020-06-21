@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>543611623634-tnhd93pttskp9bddgc90gucpctmnpp22.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.543611623634-tnhd93pttskp9bddgc90gucpctmnpp22</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAWf5fLVUMs8QC97Djr2YB4ZBetiLqo_B0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>543611623634</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>NordTunes.AuthorizationSample</string>
+	<key>PROJECT_ID</key>
+	<string>authorizationsimple</string>
+	<key>STORAGE_BUCKET</key>
+	<string>authorizationsimple.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:543611623634:ios:08eaea66de5300d4cbf50b</string>
+	<key>DATABASE_URL</key>
+	<string>https://authorizationsimple.firebaseio.com</string>
+</dict>
+</plist>

@@ -48,7 +48,7 @@
                                     <constraint firstItem="gS1-KU-hnh" firstAttribute="height" secondItem="lWP-jZ-uzn" secondAttribute="height" id="GSD-pc-pex"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="jZo-Lz-rtU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="firebase_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jZo-Lz-rtU">
                                 <rect key="frame" x="40" y="50" width="295" height="115"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsS-p0-TMo">
@@ -242,6 +242,49 @@
             </objects>
             <point key="canvasLocation" x="1260" y="-459"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Ngw-6c-khC">
+            <objects>
+                <viewController storyboardIdentifier="home" id="Ska-UR-k2y" customClass="HomeViewController" customModule="AuthorizationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOl-57-dFj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-HV-BgZ">
+                                <rect key="frame" x="40" y="100" width="295" height="132"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-Sv-4WH">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="52"/>
+                                        <fontDescription key="fontDescription" name="Indigo-Daisy" family="Indigo Daisy" pointSize="52"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-Km-AZf">
+                                        <rect key="frame" x="0.0" y="102" width="295" height="30"/>
+                                        <state key="normal" title="Logout"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4pY-HV-BgZ" firstAttribute="leading" secondItem="5rF-wz-Cjg" secondAttribute="leading" constant="40" id="F3C-vc-YTt"/>
+                            <constraint firstItem="4pY-HV-BgZ" firstAttribute="top" secondItem="5rF-wz-Cjg" secondAttribute="top" constant="100" id="QqC-fq-sBU"/>
+                            <constraint firstItem="5rF-wz-Cjg" firstAttribute="trailing" secondItem="4pY-HV-BgZ" secondAttribute="trailing" constant="40" id="gmt-Rf-2by"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5rF-wz-Cjg"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="Xl0-Km-AZf" id="QWb-pS-WeX"/>
+                        <outlet property="welcomeLabel" destination="xXs-Sv-4WH" id="hoy-EM-3y9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBF-mT-tHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2081" y="-65"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bMm-bZ-SaW">
             <objects>
@@ -261,6 +304,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="unnamed" width="512" height="512"/>
+        <image name="firebase_logo" width="800" height="600"/>
     </resources>
 </document>
