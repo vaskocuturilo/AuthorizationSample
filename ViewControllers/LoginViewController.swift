@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField:UITextField!
     @IBOutlet weak var loginButton:UIButton!
     @IBOutlet weak var clickLabel:UILabel!
+    @IBOutlet weak var errorLabel:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class LoginViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.handleTap))
         clickLabel.isUserInteractionEnabled = true
         clickLabel.addGestureRecognizer(tap)
-        
+        errorLabel.alpha = 0
     }
     
     
@@ -41,6 +42,24 @@ class LoginViewController: UIViewController {
             return
         }
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func loginTapped() {
         
+        let email = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                self.errorLabel.text = error!.localizedDescription
+                self.errorLabel.alpha = 1
+            } else {
+                let homeController = self.storyboard?.instantiateViewController(identifier: Constans.StoryBoard.homeViewController) as? HomeViewController
+                
+                self.view.window?.rootViewController = homeController
+                self.view.window?.makeKeyAndVisible()
+                
+            }
+        }
     }
 }

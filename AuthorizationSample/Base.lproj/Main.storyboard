@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RPH-5i-N36">
-                                <rect key="frame" x="40" y="220" width="295" height="260.5"/>
+                                <rect key="frame" x="40" y="220" width="295" height="311"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BLB-tr-psm">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -110,16 +110,25 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45H-mg-2tj">
+                                        <rect key="frame" x="0.0" y="160" width="295" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd4-38-MSk">
-                                        <rect key="frame" x="0.0" y="160" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="210.5" width="295" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2mk-BI-MIU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="LOGIN"/>
+                                        <connections>
+                                            <action selector="loginTapped" destination="rzZ-kC-iRY" eventType="touchUpInside" id="Y9b-Gf-gJw"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click for Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-0u-XUo">
-                                        <rect key="frame" x="0.0" y="240" width="295" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="290.5" width="295" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -146,6 +155,7 @@
                     <connections>
                         <outlet property="clickLabel" destination="lgg-0u-XUo" id="4sa-bO-vj1"/>
                         <outlet property="emailField" destination="BLB-tr-psm" id="w3z-Tc-Pad"/>
+                        <outlet property="errorLabel" destination="45H-mg-2tj" id="ZEv-i6-ajk"/>
                         <outlet property="loginButton" destination="Wd4-38-MSk" id="R9E-tQ-lFe"/>
                         <outlet property="passwordField" destination="4mr-CF-6OI" id="QPf-l0-Mm8"/>
                     </connections>
