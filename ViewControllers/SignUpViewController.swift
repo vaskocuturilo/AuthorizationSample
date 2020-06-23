@@ -25,6 +25,8 @@ class SignUpViewController: UIViewController {
         
         setElements()
         
+        errorLabel.alpha = 0
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleTap))
         clickLabel.isUserInteractionEnabled = true
         clickLabel.addGestureRecognizer(tap)
@@ -36,7 +38,7 @@ class SignUpViewController: UIViewController {
         if nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
-            return "Please fill in all fields"
+            return "Please, fill in all fields."
         }
         
         let cleanPassword = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -46,13 +48,11 @@ class SignUpViewController: UIViewController {
         if Utilities.isPasswordValid(cleanPassword) == false ||
             Utilities.isPasswordValid(retypeClenPassword) == false {
             
-            return "Please check your password!!!!!"
+            return "Please check your password."
         }
         
         return nil
     }
-    
-    
     
     func setElements(){
         
@@ -88,16 +88,15 @@ class SignUpViewController: UIViewController {
             
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 if err != nil {
-                    self.showError("Error createing user")
+                    self.errorLabel.text = err?.localizedDescription
                 } else {
                     let dataBase = Firestore.firestore()
                     dataBase.collection("users").addDocument(data: ["name":name, "uid":result!.user.uid]) { (error) in
                         if error != nil {
-                            self.showError("Can't saving user data")
+                            self.errorLabel.text = error?.localizedDescription
                         }
                     }
                 }
-                //Transition
                 self.transitionToHome()
             }
         }
