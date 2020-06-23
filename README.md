@@ -35,11 +35,11 @@ You will need the following technologies available to try it out:
 
 ### Generate Allure report 
 
-```gradle allure:report```
+```xcresults export /path/to/Test.xcresult /path/to/outputDirectory```
 
 ### Open Allure report in browser
 
-```gradle allure:serve```
+```allure serve /path/to/outputDirectory```
 
 
 ![](https://c.radikal.ru/c18/2006/d4/8a941a65e312.png) 
