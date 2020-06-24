@@ -48,7 +48,7 @@ class SignUpViewController: UIViewController {
         if Utilities.isPasswordValid(cleanPassword) == false ||
             Utilities.isPasswordValid(retypeClenPassword) == false {
             
-            return "Please check your password."
+            return "Please check your password. Password must be at least 6-Characters long one numeric & one secial character."
         }
         
         return nil
