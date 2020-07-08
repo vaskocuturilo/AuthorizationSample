@@ -17,12 +17,23 @@
 		721ED9792497DDEA00058636 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721ED9782497DDEA00058636 /* Utilities.swift */; };
 		722EE10E2498A0C1000E4839 /* indigo_daisy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */; };
 		722EE10F2498A0C4000E4839 /* roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10C2498A0A3000E4839 /* roboto_regular.ttf */; };
+		7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */; };
 		72592AA22498ECF400A2463D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA12498ECF400A2463D /* SignUpViewController.swift */; };
 		72592AA42498ED0500A2463D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA32498ED0500A2463D /* LoginViewController.swift */; };
 		729D0015249FAEB200DFC746 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D0014249FAEB200DFC746 /* Constans.swift */; };
 		72B50663249F9AFE00909B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72B50662249F9AFE00909B32 /* GoogleService-Info.plist */; };
 		72D6FF49249F9C7B00D139A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D6FF48249F9C7B00D139A8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7246AE0024B60024007D63AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 721ED9582497DB4C00058636 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 721ED95F2497DB4C00058636;
+			remoteInfo = AuthorizationSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06C3B3E1F2B023FA477339A4 /* Pods-AuthorizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthorizationSample.release.xcconfig"; path = "Target Support Files/Pods-AuthorizationSample/Pods-AuthorizationSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +48,9 @@
 		721ED9782497DDEA00058636 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		722EE10C2498A0A3000E4839 /* roboto_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto_regular.ttf; sourceTree = "<group>"; };
 		722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = indigo_daisy.ttf; sourceTree = "<group>"; };
+		7246ADFB24B60024007D63AE /* AuthorizationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationSampleUITests.swift; sourceTree = "<group>"; };
+		7246ADFF24B60024007D63AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72592AA12498ECF400A2463D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		72592AA32498ED0500A2463D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		729D0014249FAEB200DFC746 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
@@ -55,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7246ADF824B60024007D63AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +86,7 @@
 				722EE10B2498A087000E4839 /* Fonts */,
 				721ED9772497DDC700058636 /* Helpers */,
 				721ED9622497DB4C00058636 /* AuthorizationSample */,
+				7246ADFC24B60024007D63AE /* AuthorizationSampleUITests */,
 				721ED9612497DB4C00058636 /* Products */,
 				92E0DC98425166A32FCD0243 /* Pods */,
 				ED2CC4A1D3C78AC45A5148FA /* Frameworks */,
@@ -75,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				721ED9602497DB4C00058636 /* AuthorizationSample.app */,
+				7246ADFB24B60024007D63AE /* AuthorizationSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +133,15 @@
 				722EE10C2498A0A3000E4839 /* roboto_regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7246ADFC24B60024007D63AE /* AuthorizationSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */,
+				7246ADFF24B60024007D63AE /* Info.plist */,
+			);
+			path = AuthorizationSampleUITests;
 			sourceTree = "<group>";
 		};
 		72592AA02498ECDB00A2463D /* ViewControllers */ = {
@@ -161,6 +193,24 @@
 			productReference = 721ED9602497DB4C00058636 /* AuthorizationSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7246ADFA24B60024007D63AE /* AuthorizationSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7246AE0424B60024007D63AE /* Build configuration list for PBXNativeTarget "AuthorizationSampleUITests" */;
+			buildPhases = (
+				7246ADF724B60024007D63AE /* Sources */,
+				7246ADF824B60024007D63AE /* Frameworks */,
+				7246ADF924B60024007D63AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7246AE0124B60024007D63AE /* PBXTargetDependency */,
+			);
+			name = AuthorizationSampleUITests;
+			productName = AuthorizationSampleUITests;
+			productReference = 7246ADFB24B60024007D63AE /* AuthorizationSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +223,10 @@
 				TargetAttributes = {
 					721ED95F2497DB4C00058636 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					7246ADFA24B60024007D63AE = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 721ED95F2497DB4C00058636;
 					};
 				};
 			};
@@ -190,6 +244,7 @@
 			projectRoot = "";
 			targets = (
 				721ED95F2497DB4C00058636 /* AuthorizationSample */,
+				7246ADFA24B60024007D63AE /* AuthorizationSampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +260,13 @@
 				721ED96D2497DB4D00058636 /* Assets.xcassets in Resources */,
 				721ED96B2497DB4C00058636 /* Main.storyboard in Resources */,
 				72B50663249F9AFE00909B32 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7246ADF924B60024007D63AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +330,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7246ADF724B60024007D63AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7246AE0124B60024007D63AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 721ED95F2497DB4C00058636 /* AuthorizationSample */;
+			targetProxy = 7246AE0024B60024007D63AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		721ED9692497DB4C00058636 /* Main.storyboard */ = {
@@ -442,6 +520,44 @@
 			};
 			name = Release;
 		};
+		7246AE0224B60024007D63AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5T9HL953S;
+				INFOPLIST_FILE = AuthorizationSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NordTunes.AuthorizationSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AuthorizationSample;
+			};
+			name = Debug;
+		};
+		7246AE0324B60024007D63AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5T9HL953S;
+				INFOPLIST_FILE = AuthorizationSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NordTunes.AuthorizationSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AuthorizationSample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,6 +575,15 @@
 			buildConfigurations = (
 				721ED9752497DB4D00058636 /* Debug */,
 				721ED9762497DB4D00058636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7246AE0424B60024007D63AE /* Build configuration list for PBXNativeTarget "AuthorizationSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7246AE0224B60024007D63AE /* Debug */,
+				7246AE0324B60024007D63AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
