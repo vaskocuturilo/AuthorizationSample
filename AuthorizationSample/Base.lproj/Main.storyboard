@@ -10,6 +10,9 @@
         <array key="indigo_daisy.ttf">
             <string>Indigo-Daisy</string>
         </array>
+        <array key="roboto_regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -81,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="-65"/>
+            <point key="canvasLocation" x="-167" y="-65"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Vgt-ax-KXN">
@@ -98,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RPH-5i-N36">
-                                <rect key="frame" x="40" y="220" width="295" height="311"/>
+                                <rect key="frame" x="40" y="220" width="295" height="310.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BLB-tr-psm">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -108,16 +111,16 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mr-CF-6OI">
                                         <rect key="frame" x="0.0" y="80" width="295" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45H-mg-2tj">
-                                        <rect key="frame" x="0.0" y="160" width="295" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="160" width="295" height="20"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd4-38-MSk">
-                                        <rect key="frame" x="0.0" y="210.5" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="210" width="295" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2mk-BI-MIU"/>
                                         </constraints>
@@ -128,7 +131,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click for Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-0u-XUo">
-                                        <rect key="frame" x="0.0" y="290.5" width="295" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="290" width="295" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -162,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8R-c4-2m6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="199"/>
+            <point key="canvasLocation" x="836" y="207"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="x6O-RE-5kW">
@@ -179,7 +182,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-8o-fhp">
-                                <rect key="frame" x="40" y="220" width="295" height="411"/>
+                                <rect key="frame" x="40" y="220" width="295" height="412"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTy-pB-EaK">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -201,14 +204,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-5H-FyL">
-                                        <rect key="frame" x="0.0" y="280" width="295" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-5H-FyL">
+                                        <rect key="frame" x="0.0" y="280" width="295" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                         <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-E0-Lqb">
-                                        <rect key="frame" x="0.0" y="320.5" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="321.5" width="295" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="f3V-5S-VEb"/>
                                         </constraints>
@@ -219,7 +222,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click for Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-WC-I8m">
-                                        <rect key="frame" x="0.0" y="390.5" width="295" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="391.5" width="295" height="20.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                         </accessibility>
@@ -239,11 +242,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bIi-9T-bVc" firstAttribute="trailing" secondItem="Sgn-8o-fhp" secondAttribute="trailing" constant="40" id="2W3-yA-iFC"/>
+                            <constraint firstItem="bIi-9T-bVc" firstAttribute="bottom" secondItem="Sgn-8o-fhp" secondAttribute="bottom" constant="35" id="6mJ-Mf-twj"/>
                             <constraint firstItem="u8r-Hn-b3q" firstAttribute="leading" secondItem="bIi-9T-bVc" secondAttribute="leading" constant="40" id="DfK-rl-tlk"/>
                             <constraint firstItem="bIi-9T-bVc" firstAttribute="trailing" secondItem="u8r-Hn-b3q" secondAttribute="trailing" constant="40" id="Fxa-eI-aXb"/>
                             <constraint firstItem="u8r-Hn-b3q" firstAttribute="top" secondItem="bIi-9T-bVc" secondAttribute="top" constant="40" id="Ypp-ja-la2"/>
                             <constraint firstItem="Sgn-8o-fhp" firstAttribute="leading" secondItem="bIi-9T-bVc" secondAttribute="leading" constant="40" id="Ywr-GL-UmT"/>
-                            <constraint firstItem="Sgn-8o-fhp" firstAttribute="top" secondItem="u8r-Hn-b3q" secondAttribute="bottom" constant="100" id="exb-dV-0SP"/>
+                            <constraint firstItem="bIi-9T-bVc" firstAttribute="trailing" secondItem="Sgn-8o-fhp" secondAttribute="trailing" constant="40" id="bZf-Fq-OPs"/>
+                            <constraint firstItem="Sgn-8o-fhp" firstAttribute="leading" secondItem="bIi-9T-bVc" secondAttribute="leading" constant="40" id="o6y-yf-ava"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bIi-9T-bVc"/>
                     </view>
@@ -260,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlK-1i-UZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="-459"/>
+            <point key="canvasLocation" x="836" y="-447"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Ngw-6c-khC">
@@ -306,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBF-mT-tHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081" y="-65"/>
+            <point key="canvasLocation" x="1647" y="-65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bMm-bZ-SaW">
@@ -323,7 +328,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRV-dn-dSN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-449" y="123"/>
+            <point key="canvasLocation" x="-1034" y="-65"/>
         </scene>
     </scenes>
     <resources>

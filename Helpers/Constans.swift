@@ -14,5 +14,7 @@ struct Constans {
     struct StoryBoard {
         
         static let homeViewController = "home"
+        
+        static let mainViewController = "main"
     }
 }

@@ -54,12 +54,16 @@ class LoginViewController: UIViewController {
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
-                let homeController = self.storyboard?.instantiateViewController(identifier: Constans.StoryBoard.homeViewController) as? HomeViewController
-                
-                self.view.window?.rootViewController = homeController
-                self.view.window?.makeKeyAndVisible()
-                
+               
+                self.transitionToHome()
             }
         }
+    }
+    
+    func transitionToHome(){
+        let homeController = storyboard?.instantiateViewController(identifier: Constans.StoryBoard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeController
+        view.window?.makeKeyAndVisible()
     }
 }
