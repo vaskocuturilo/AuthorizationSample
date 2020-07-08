@@ -25,8 +25,24 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
-        let mainController = storyboard?.instantiateViewController(identifier: "main") as? ViewController
-        view.window?.rootViewController = mainController
-        view.window?.makeKeyAndVisible()
+        
+        let refreshAlert = UIAlertController(title: "Confirm", message: "Are you sure you want logout?", preferredStyle: UIAlertController.Style.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            
+            guard let mainController = self.storyboard?.instantiateViewController(withIdentifier: Constans.StoryBoard.mainViewController) as? ViewController else {
+                return
+            }
+            
+            self.navigationController?.pushViewController(mainController, animated: true)
+            self.view.window?.rootViewController = mainController
+            self.view.window?.makeKeyAndVisible()
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
     }
 }
