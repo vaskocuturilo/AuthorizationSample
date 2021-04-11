@@ -1,15 +1,14 @@
 # The simple example project how to work with XCUITest framework
 
 ## Test scenario:
-- Create simpler application with Authorization(LOgin and Register).
-- 
--  
+- Create simpler application with Authorization(Login and Register).
+- Create automation scripts for Authorization application. 
+- Generate report for automation scripts. 
     
 ## Requirements:
 - Use any *object-oriented language* (Objective-C or Swift).
-- Use any Http client for API requests.
 - Use automation patterns like *PageObject*, *data-driven* tests, etc.
-- Use any testing frameworks (XCTesr). 
+- Use any testing frameworks (XCTest). 
 - provide code and clear instructions how to run it.
 
 **Note**: please put your code in public repository.
