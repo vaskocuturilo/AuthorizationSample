@@ -41,7 +41,7 @@ You will need the following technologies available to try it out:
 ```allure serve /path/to/outputDirectory```
 
 
-![](https://c.radikal.ru/c18/2006/d4/8a941a65e312.png) 
+![](https://d.radikal.ru/d21/2104/7e/846e151dbe68.png) 
 
 ![](https://b.radikal.ru/b10/2006/59/954d84d137fd.png)
 
