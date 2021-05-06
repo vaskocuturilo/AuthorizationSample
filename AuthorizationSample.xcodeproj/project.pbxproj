@@ -22,6 +22,14 @@
 		72592AA42498ED0500A2463D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA32498ED0500A2463D /* LoginViewController.swift */; };
 		729D0015249FAEB200DFC746 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D0014249FAEB200DFC746 /* Constans.swift */; };
 		72B50663249F9AFE00909B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72B50662249F9AFE00909B32 /* GoogleService-Info.plist */; };
+		72C6B1FB26443E3000821B6E /* AuthorizationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B1F226443D5700821B6E /* AuthorizationTestCase.swift */; };
+		72C6B20426443E7700821B6E /* AuthorizationTestCaseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B20226443E7700821B6E /* AuthorizationTestCaseContainer.swift */; };
+		72C6B20926443EFA00821B6E /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B20726443EFA00821B6E /* RootScreen.swift */; };
+		72C6B20E26443F2C00821B6E /* AuthorizationPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B20C26443F2C00821B6E /* AuthorizationPageObject.swift */; };
+		72C6B21526443F7800821B6E /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B21326443F7800821B6E /* AuthorizationScreen.swift */; };
+		72C6B22A264441E700821B6E /* CheckPreconditionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B229264441E700821B6E /* CheckPreconditionsTest.swift */; };
+		72C6B2522644448500821B6E /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B2202644409A00821B6E /* Accessibility.swift */; };
+		72C6B255264444A400821B6E /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B2202644409A00821B6E /* Accessibility.swift */; };
 		72D6FF49249F9C7B00D139A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D6FF48249F9C7B00D139A8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +63,13 @@
 		72592AA32498ED0500A2463D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		729D0014249FAEB200DFC746 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		72B50662249F9AFE00909B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72C6B1F226443D5700821B6E /* AuthorizationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCase.swift; sourceTree = "<group>"; };
+		72C6B20226443E7700821B6E /* AuthorizationTestCaseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCaseContainer.swift; sourceTree = "<group>"; };
+		72C6B20726443EFA00821B6E /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		72C6B20C26443F2C00821B6E /* AuthorizationPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPageObject.swift; sourceTree = "<group>"; };
+		72C6B21326443F7800821B6E /* AuthorizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreen.swift; sourceTree = "<group>"; };
+		72C6B2202644409A00821B6E /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+		72C6B229264441E700821B6E /* CheckPreconditionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPreconditionsTest.swift; sourceTree = "<group>"; };
 		72D6FF48249F9C7B00D139A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9012AD3AFA085F445FD2EC17 /* Pods-AuthorizationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthorizationSample.debug.xcconfig"; path = "Target Support Files/Pods-AuthorizationSample/Pods-AuthorizationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A08916EBE22063CB9D327CA6 /* Pods_AuthorizationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthorizationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +97,7 @@
 		721ED9572497DB4C00058636 = {
 			isa = PBXGroup;
 			children = (
+				72C6B2262644415800821B6E /* Utils */,
 				72592AA02498ECDB00A2463D /* ViewControllers */,
 				722EE10B2498A087000E4839 /* Fonts */,
 				721ED9772497DDC700058636 /* Helpers */,
@@ -105,6 +121,7 @@
 		721ED9622497DB4C00058636 /* AuthorizationSample */ = {
 			isa = PBXGroup;
 			children = (
+				72C6B2202644409A00821B6E /* Accessibility.swift */,
 				721ED9632497DB4C00058636 /* AppDelegate.swift */,
 				721ED9652497DB4C00058636 /* SceneDelegate.swift */,
 				721ED9672497DB4C00058636 /* ViewController.swift */,
@@ -138,7 +155,9 @@
 		7246ADFC24B60024007D63AE /* AuthorizationSampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */,
+				72C6B2582644456E00821B6E /* SimpleTests */,
+				72C6B2252644414200821B6E /* Screens */,
+				72C6B2242644412300821B6E /* Base */,
 				7246ADFF24B60024007D63AE /* Info.plist */,
 			);
 			path = AuthorizationSampleUITests;
@@ -152,6 +171,41 @@
 				72D6FF48249F9C7B00D139A8 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		72C6B2242644412300821B6E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				72C6B1F226443D5700821B6E /* AuthorizationTestCase.swift */,
+				72C6B20226443E7700821B6E /* AuthorizationTestCaseContainer.swift */,
+				72C6B20C26443F2C00821B6E /* AuthorizationPageObject.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		72C6B2252644414200821B6E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				72C6B21326443F7800821B6E /* AuthorizationScreen.swift */,
+				72C6B20726443EFA00821B6E /* RootScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		72C6B2262644415800821B6E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		72C6B2582644456E00821B6E /* SimpleTests */ = {
+			isa = PBXGroup;
+			children = (
+				72C6B229264441E700821B6E /* CheckPreconditionsTest.swift */,
+				7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */,
+			);
+			path = SimpleTests;
 			sourceTree = "<group>";
 		};
 		92E0DC98425166A32FCD0243 /* Pods */ = {
@@ -326,6 +380,7 @@
 				721ED9792497DDEA00058636 /* Utilities.swift in Sources */,
 				721ED9662497DB4C00058636 /* SceneDelegate.swift in Sources */,
 				72D6FF49249F9C7B00D139A8 /* HomeViewController.swift in Sources */,
+				72C6B255264444A400821B6E /* Accessibility.swift in Sources */,
 				72592AA22498ECF400A2463D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +390,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */,
+				72C6B20926443EFA00821B6E /* RootScreen.swift in Sources */,
+				72C6B1FB26443E3000821B6E /* AuthorizationTestCase.swift in Sources */,
+				72C6B20426443E7700821B6E /* AuthorizationTestCaseContainer.swift in Sources */,
+				72C6B20E26443F2C00821B6E /* AuthorizationPageObject.swift in Sources */,
+				72C6B22A264441E700821B6E /* CheckPreconditionsTest.swift in Sources */,
+				72C6B2522644448500821B6E /* Accessibility.swift in Sources */,
+				72C6B21526443F7800821B6E /* AuthorizationScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,40 @@
+.DS_Store
+/build
+*.mode1v3
+*.pbxuser
+/DerivedData
+.svn
+xcuserdata
+*.xccheckout
+.com.apple.timemachine.supported
+report.xml
+xcuserdata/*
+*.xcodeproj/xcuserdata/*
+*.xcuserstate
+*.dSYM.zip
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+Pods/
+
+# Carthage
+#
+Carthage/Checkouts
+Carthage/Build
+
+# Env
+build-scripts/autotests.docker/id_rsa
+build-scripts/autotests.docker/application.php
+build-scripts/autotests.docker/local-config.php
+env-vars.sh
+testing-pre-actions.log
+
+# App Store Connect Api Key
+app_store_connect_fastlane_key.json
+
+# Fastlane
+fastlane/test_output/*
