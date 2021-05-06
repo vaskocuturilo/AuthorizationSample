@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FacebookLogin
+import FacebookCore
 
 class HomeViewController: UIViewController {
     
@@ -29,14 +32,15 @@ class HomeViewController: UIViewController {
         let refreshAlert = UIAlertController(title: "Confirm", message: "Are you sure you want logout?", preferredStyle: UIAlertController.Style.alert)
         
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-            
+           
             guard let mainController = self.storyboard?.instantiateViewController(withIdentifier: Constans.StoryBoard.mainViewController) as? ViewController else {
                 return
             }
-            
+            self.logOut()
             self.navigationController?.pushViewController(mainController, animated: true)
             self.view.window?.rootViewController = mainController
             self.view.window?.makeKeyAndVisible()
+            
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -44,5 +48,9 @@ class HomeViewController: UIViewController {
         }))
         
         present(refreshAlert, animated: true, completion: nil)
+    }
+    
+    func logOut(){
+        
     }
 }

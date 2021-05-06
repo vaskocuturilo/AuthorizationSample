@@ -9,6 +9,9 @@ target 'AuthorizationSample' do
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'FacebookCore'
+pod 'FacebookLogin'
 pod 'FirebaseFirestoreSwift'
 pod 'Firebase/Analytics'
+pod 'FBSDKLoginKit'
 end

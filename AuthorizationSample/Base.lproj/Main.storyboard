@@ -24,12 +24,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-bz-abS">
-                                <rect key="frame" x="40" y="363" width="295" height="150"/>
+                                <rect key="frame" x="40" y="248" width="295" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWP-jZ-uzn">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="jD3-7o-ZVX"/>
+                                            <constraint firstAttribute="height" constant="50" id="978-vQ-dPO"/>
                                         </constraints>
                                         <state key="normal" title="Log In"/>
                                         <connections>
@@ -39,23 +39,34 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-KU-hnh">
                                         <rect key="frame" x="0.0" y="100" width="295" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="gf7-SD-AtM"/>
+                                            <constraint firstAttribute="height" constant="50" id="aN5-ZZ-0l9"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <segue destination="g7S-bC-nI7" kind="show" id="QXm-Y6-VCg"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBV-cv-rfV">
+                                        <rect key="frame" x="0.0" y="200" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="R91-RN-iHb"/>
+                                        </constraints>
+                                        <state key="normal" title="Facebook"/>
+                                        <connections>
+                                            <action selector="facebookLoginMethod" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPn-rs-RYd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYD-hr-CBH">
+                                        <rect key="frame" x="0.0" y="300" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="AsZ-1S-Lwq"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign in Anonymously"/>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="gS1-KU-hnh" firstAttribute="height" secondItem="lWP-jZ-uzn" secondAttribute="height" id="GSD-pc-pex"/>
-                                </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="firebase_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jZo-Lz-rtU">
-                                <rect key="frame" x="40" y="50" width="295" height="115"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsS-p0-TMo">
-                                <rect key="frame" x="40" y="215" width="295" height="48"/>
+                                <rect key="frame" x="40" y="100" width="295" height="48"/>
                                 <fontDescription key="fontDescription" name="Indigo-Daisy" family="Indigo Daisy" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,21 +74,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="jZo-Lz-rtU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="80x-Yf-stO"/>
                             <constraint firstItem="hu3-bz-abS" firstAttribute="top" secondItem="zsS-p0-TMo" secondAttribute="bottom" constant="100" id="Cob-fX-57O"/>
-                            <constraint firstItem="jZo-Lz-rtU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="F2N-Tx-wrg"/>
                             <constraint firstItem="zsS-p0-TMo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="G5Z-d6-n5p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hu3-bz-abS" secondAttribute="trailing" constant="40" id="Guf-xz-r6e"/>
-                            <constraint firstItem="zsS-p0-TMo" firstAttribute="top" secondItem="jZo-Lz-rtU" secondAttribute="bottom" constant="50" id="M1h-Dx-Zwc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jZo-Lz-rtU" secondAttribute="trailing" constant="40" id="Z5a-hT-co8"/>
-                            <constraint firstItem="hu3-bz-abS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="363" id="iN5-2K-kTD"/>
                             <constraint firstItem="hu3-bz-abS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uJ3-0S-6Lg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zsS-p0-TMo" secondAttribute="trailing" constant="40" id="y5Q-sE-Bht"/>
+                            <constraint firstItem="zsS-p0-TMo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="yJR-Yn-5sk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="xmS-Y0-QJQ"/>
                     <connections>
+                        <outlet property="facebookLogin" destination="YBV-cv-rfV" id="FN8-Yd-Cbd"/>
                         <outlet property="logInButton" destination="lWP-jZ-uzn" id="Upj-5W-e2d"/>
                         <outlet property="signUpButton" destination="gS1-KU-hnh" id="ZwN-GJ-viP"/>
                     </connections>
@@ -165,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8R-c4-2m6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="207"/>
+            <point key="canvasLocation" x="836" y="267"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="x6O-RE-5kW">
@@ -311,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBF-mT-tHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="-65"/>
+            <point key="canvasLocation" x="1516" y="-65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bMm-bZ-SaW">
@@ -331,7 +339,4 @@
             <point key="canvasLocation" x="-1034" y="-65"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="firebase_logo" width="800" height="600"/>
-    </resources>
 </document>
