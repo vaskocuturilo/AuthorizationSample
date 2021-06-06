@@ -36,6 +36,7 @@ enum Accessibility {
             public static let LoginButton = wrapIdentifier("LoginButton")
             public static let SignUpButton = wrapIdentifier("SignUpButton")
             public static let FacebookButton = wrapIdentifier("FacebookButton")
+            public static let SignInAnonymouseButton = wrapIdentifier("SignInAnonymouse")
         }
         
         public enum Login: AccessibilityEnum {

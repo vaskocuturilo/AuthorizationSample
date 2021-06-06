@@ -21,7 +21,6 @@
 		72284555266CF40800D6AD32 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284554266CF40800D6AD32 /* SignUpScreen.swift */; };
 		722EE10E2498A0C1000E4839 /* indigo_daisy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */; };
 		722EE10F2498A0C4000E4839 /* roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10C2498A0A3000E4839 /* roboto_regular.ttf */; };
-		7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */; };
 		72592AA22498ECF400A2463D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA12498ECF400A2463D /* SignUpViewController.swift */; };
 		72592AA42498ED0500A2463D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA32498ED0500A2463D /* LoginViewController.swift */; };
 		729D0015249FAEB200DFC746 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D0014249FAEB200DFC746 /* Constans.swift */; };
@@ -65,7 +64,6 @@
 		722EE10C2498A0A3000E4839 /* roboto_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto_regular.ttf; sourceTree = "<group>"; };
 		722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = indigo_daisy.ttf; sourceTree = "<group>"; };
 		7246ADFB24B60024007D63AE /* AuthorizationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationSampleUITests.swift; sourceTree = "<group>"; };
 		7246ADFF24B60024007D63AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72592AA12498ECF400A2463D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		72592AA32498ED0500A2463D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				72C6B229264441E700821B6E /* CheckPreconditionsTest.swift */,
-				7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */,
 				72284542266CE0A100D6AD32 /* SimpleLoginTest.swift */,
 				72284550266CF38100D6AD32 /* SimpleSignUpTest.swift */,
 			);
@@ -401,7 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */,
 				72C6B20926443EFA00821B6E /* RootScreen.swift in Sources */,
 				72C6B1FB26443E3000821B6E /* AuthorizationTestCase.swift in Sources */,
 				72284551266CF38100D6AD32 /* SimpleSignUpTest.swift in Sources */,
