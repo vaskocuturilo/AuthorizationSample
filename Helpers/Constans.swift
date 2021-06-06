@@ -16,5 +16,7 @@ struct Constans {
         static let homeViewController = "home"
         
         static let mainViewController = "main"
+        
+        static let userName = "Test Client"
     }
 }

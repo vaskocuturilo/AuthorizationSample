@@ -30,6 +30,21 @@ class SignUpViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleTap))
         clickLabel.isUserInteractionEnabled = true
         clickLabel.addGestureRecognizer(tap)
+        
+        nameField.isAccessibilityElement = true
+        nameField.accessibilityIdentifier = AccessabilityRoot.NameField
+        
+        emailField.isAccessibilityElement = true
+        emailField.accessibilityIdentifier = AccessabilityRoot.EmailField
+        
+        passwordField.isAccessibilityElement = true
+        passwordField.accessibilityIdentifier = AccessabilityRoot.PasswordField
+        
+        retypePassword.isAccessibilityElement = true
+        retypePassword.accessibilityIdentifier = AccessabilityRoot.RePasswordField
+        
+        registerButton.isAccessibilityElement = true
+        registerButton.accessibilityIdentifier = AccessabilityRoot.RegisterButton
     }
     
     func validateFields() -> String? {
