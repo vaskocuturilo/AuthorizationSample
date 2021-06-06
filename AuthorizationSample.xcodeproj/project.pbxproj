@@ -24,6 +24,7 @@
 		722EE10F2498A0C4000E4839 /* roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10C2498A0A3000E4839 /* roboto_regular.ttf */; };
 		72592AA22498ECF400A2463D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA12498ECF400A2463D /* SignUpViewController.swift */; };
 		72592AA42498ED0500A2463D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA32498ED0500A2463D /* LoginViewController.swift */; };
+		726FD8BE266D4BE200E4784A /* LogoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FD8BD266D4BE200E4784A /* LogoutScreen.swift */; };
 		729D0015249FAEB200DFC746 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D0014249FAEB200DFC746 /* Constans.swift */; };
 		72B50663249F9AFE00909B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72B50662249F9AFE00909B32 /* GoogleService-Info.plist */; };
 		72C6B1FB26443E3000821B6E /* AuthorizationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6B1F226443D5700821B6E /* AuthorizationTestCase.swift */; };
@@ -69,6 +70,7 @@
 		7246ADFF24B60024007D63AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72592AA12498ECF400A2463D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		72592AA32498ED0500A2463D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		726FD8BD266D4BE200E4784A /* LogoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutScreen.swift; sourceTree = "<group>"; };
 		729D0014249FAEB200DFC746 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		72B50662249F9AFE00909B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72C6B1F226443D5700821B6E /* AuthorizationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCase.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				72C6B20726443EFA00821B6E /* RootScreen.swift */,
 				72284546266CE14700D6AD32 /* LoginScreen.swift */,
 				72284554266CF40800D6AD32 /* SignUpScreen.swift */,
+				726FD8BD266D4BE200E4784A /* LogoutScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				72C6B2522644448500821B6E /* Accessibility.swift in Sources */,
 				72C6B21526443F7800821B6E /* AuthorizationScreen.swift in Sources */,
 				72284555266CF40800D6AD32 /* SignUpScreen.swift in Sources */,
+				726FD8BE266D4BE200E4784A /* LogoutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
