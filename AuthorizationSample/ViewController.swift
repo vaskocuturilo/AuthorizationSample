@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var logInButton:UIButton!
     @IBOutlet weak var facebookLogin:UIButton!
     @IBOutlet weak var signUpButton:UIButton!
+    @IBOutlet weak var signInAnonymouse: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         logInButton.accessibilityIdentifier = AccessibilityRoot.LoginButton
         signUpButton.accessibilityIdentifier = AccessibilityRoot.SignUpButton
         facebookLogin.accessibilityIdentifier = AccessibilityRoot.FacebookButton
+        signInAnonymouse.accessibilityIdentifier = AccessibilityRoot.SignInAnonymouseButton
     }
     
     func transitionToHome() {
