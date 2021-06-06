@@ -8,9 +8,18 @@
 
 import XCTest
 
+fileprivate let AccessibilityRoot = Accessibility.Screen.Root.self
 class RootScreen: AuthorizationPageObject {
     
     override var root: XCUIElement{
-        return self.application.otherElements[Accessibility.Screen.Root.View]
+        return self.application.otherElements[AccessibilityRoot.View]
+    }
+    
+    public var loginButton :XCUIElement {
+        return self.application.buttons[AccessibilityRoot.LoginButton]
+    }
+    
+    public func tapLoginButton() {
+        loginButton.tap()
     }
 }

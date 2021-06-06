@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// AccessibilityEnum
 fileprivate protocol AccessibilityEnum {
     static func wrapIdentifier(_ label: String) -> String
@@ -21,17 +20,27 @@ fileprivate extension AccessibilityEnum {
 }
 
 enum Accessibility {
-    /// InputBar тулбар над клавиатурой с кнопкой Готово
+    /// InputBar
     enum InputBar: AccessibilityEnum {
         static let View = wrapIdentifier("View")
         static let DoneButton = wrapIdentifier("DoneButton")
     }
     
-    /// Экраны
+    /// Screens
     enum Screen {
         enum Root: AccessibilityEnum {
-            // Кореневая вьюха модуля
-            static let View = wrapIdentifier("View")
+            // root view
+            public static let View = wrapIdentifier("View")
+            
+            // Buttons on main page
+            public static let LoginButton = wrapIdentifier("LoginButton")
+            public static let SignUpButton = wrapIdentifier("SignUpButton")
+            public static let FacebookButton = wrapIdentifier("FacebookButton")
+        }
+        
+        public enum Login: AccessibilityEnum {
+            // root view
+            public static let View = wrapIdentifier("View")
             
         }
     }

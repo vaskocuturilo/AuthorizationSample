@@ -15,6 +15,8 @@
 		721ED96D2497DB4D00058636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721ED96C2497DB4D00058636 /* Assets.xcassets */; };
 		721ED9702497DB4D00058636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721ED96E2497DB4D00058636 /* LaunchScreen.storyboard */; };
 		721ED9792497DDEA00058636 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721ED9782497DDEA00058636 /* Utilities.swift */; };
+		72284543266CE0A100D6AD32 /* SimpleLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284542266CE0A100D6AD32 /* SimpleLoginTest.swift */; };
+		72284547266CE14700D6AD32 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284546266CE14700D6AD32 /* LoginScreen.swift */; };
 		722EE10E2498A0C1000E4839 /* indigo_daisy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */; };
 		722EE10F2498A0C4000E4839 /* roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10C2498A0A3000E4839 /* roboto_regular.ttf */; };
 		7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */; };
@@ -54,6 +56,8 @@
 		721ED96F2497DB4D00058636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		721ED9712497DB4D00058636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		721ED9782497DDEA00058636 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		72284542266CE0A100D6AD32 /* SimpleLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTest.swift; sourceTree = "<group>"; };
+		72284546266CE14700D6AD32 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		722EE10C2498A0A3000E4839 /* roboto_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto_regular.ttf; sourceTree = "<group>"; };
 		722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = indigo_daisy.ttf; sourceTree = "<group>"; };
 		7246ADFB24B60024007D63AE /* AuthorizationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +192,7 @@
 			children = (
 				72C6B21326443F7800821B6E /* AuthorizationScreen.swift */,
 				72C6B20726443EFA00821B6E /* RootScreen.swift */,
+				72284546266CE14700D6AD32 /* LoginScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			children = (
 				72C6B229264441E700821B6E /* CheckPreconditionsTest.swift */,
 				7246ADFD24B60024007D63AE /* AuthorizationSampleUITests.swift */,
+				72284542266CE0A100D6AD32 /* SimpleLoginTest.swift */,
 			);
 			path = SimpleTests;
 			sourceTree = "<group>";
@@ -392,7 +398,9 @@
 				7246ADFE24B60024007D63AE /* AuthorizationSampleUITests.swift in Sources */,
 				72C6B20926443EFA00821B6E /* RootScreen.swift in Sources */,
 				72C6B1FB26443E3000821B6E /* AuthorizationTestCase.swift in Sources */,
+				72284543266CE0A100D6AD32 /* SimpleLoginTest.swift in Sources */,
 				72C6B20426443E7700821B6E /* AuthorizationTestCaseContainer.swift in Sources */,
+				72284547266CE14700D6AD32 /* LoginScreen.swift in Sources */,
 				72C6B20E26443F2C00821B6E /* AuthorizationPageObject.swift in Sources */,
 				72C6B22A264441E700821B6E /* CheckPreconditionsTest.swift in Sources */,
 				72C6B2522644448500821B6E /* Accessibility.swift in Sources */,
