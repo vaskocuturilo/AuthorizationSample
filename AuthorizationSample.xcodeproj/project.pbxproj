@@ -19,6 +19,7 @@
 		72284547266CE14700D6AD32 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284546266CE14700D6AD32 /* LoginScreen.swift */; };
 		72284551266CF38100D6AD32 /* SimpleSignUpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284550266CF38100D6AD32 /* SimpleSignUpTest.swift */; };
 		72284555266CF40800D6AD32 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284554266CF40800D6AD32 /* SignUpScreen.swift */; };
+		72284563266D17BF00D6AD32 /* SimpleFacebookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72284562266D17BF00D6AD32 /* SimpleFacebookTest.swift */; };
 		722EE10E2498A0C1000E4839 /* indigo_daisy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */; };
 		722EE10F2498A0C4000E4839 /* roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10C2498A0A3000E4839 /* roboto_regular.ttf */; };
 		72592AA22498ECF400A2463D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA12498ECF400A2463D /* SignUpViewController.swift */; };
@@ -61,6 +62,7 @@
 		72284546266CE14700D6AD32 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		72284550266CF38100D6AD32 /* SimpleSignUpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSignUpTest.swift; sourceTree = "<group>"; };
 		72284554266CF40800D6AD32 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		72284562266D17BF00D6AD32 /* SimpleFacebookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFacebookTest.swift; sourceTree = "<group>"; };
 		722EE10C2498A0A3000E4839 /* roboto_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto_regular.ttf; sourceTree = "<group>"; };
 		722EE10D2498A0A3000E4839 /* indigo_daisy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = indigo_daisy.ttf; sourceTree = "<group>"; };
 		7246ADFB24B60024007D63AE /* AuthorizationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +215,7 @@
 				72C6B229264441E700821B6E /* CheckPreconditionsTest.swift */,
 				72284542266CE0A100D6AD32 /* SimpleLoginTest.swift */,
 				72284550266CF38100D6AD32 /* SimpleSignUpTest.swift */,
+				72284562266D17BF00D6AD32 /* SimpleFacebookTest.swift */,
 			);
 			path = SimpleTests;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				72C6B20426443E7700821B6E /* AuthorizationTestCaseContainer.swift in Sources */,
 				72284547266CE14700D6AD32 /* LoginScreen.swift in Sources */,
 				72C6B20E26443F2C00821B6E /* AuthorizationPageObject.swift in Sources */,
+				72284563266D17BF00D6AD32 /* SimpleFacebookTest.swift in Sources */,
 				72C6B22A264441E700821B6E /* CheckPreconditionsTest.swift in Sources */,
 				72C6B2522644448500821B6E /* Accessibility.swift in Sources */,
 				72C6B21526443F7800821B6E /* AuthorizationScreen.swift in Sources */,
