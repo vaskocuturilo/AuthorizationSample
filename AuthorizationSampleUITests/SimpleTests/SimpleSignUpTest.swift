@@ -16,6 +16,14 @@ class SimpleSignUpTest: AuthorizationTestCase {
         screens.rootScreen.tapSignUpButton()
         
         waitForElementToAppear(element: screens.signUpScreen.root)
-        XCTAssert(screens.signUpScreen.root.exists, "SignUp screen must be open")
+        screens.signUpScreen.enterCredential()
+        screens.signUpScreen.registerNewUser()
+    
+        waitForElementToAppear(element: screens.logoutScreen.root)
+        screens.logoutScreen.tapLogoutButton()
+        tapAlertButtonIfExists(named: "Ok")
+        
+        waitForElementToAppear(element: screens.rootScreen.root)
+        XCTAssert(screens.rootScreen.root.exists, "Main screen must be open")
     }
 }

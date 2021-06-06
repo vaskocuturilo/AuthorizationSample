@@ -53,6 +53,13 @@ enum Accessibility {
         public enum SignUp: AccessibilityEnum {
             // root view
             public static let View = wrapIdentifier("View")
+            
+            //Fields on sign up page
+            public static let NameField = wrapIdentifier("NameField")
+            public static let EmailField = wrapIdentifier("EmailField")
+            public static let PasswordField = wrapIdentifier("PasswordField")
+            public static let RePasswordField = wrapIdentifier("RePasswordField")
+            public static let RegisterButton = wrapIdentifier("RegisterButton")
         }
         
         public enum Logout: AccessibilityEnum {
