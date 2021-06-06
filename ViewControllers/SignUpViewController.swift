@@ -10,8 +10,8 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+fileprivate let AccessabilityRoot = Accessibility.Screen.SignUp.self
 class SignUpViewController: UIViewController {
-    
     @IBOutlet weak var nameField:UITextField!
     @IBOutlet weak var emailField:UITextField!
     @IBOutlet weak var passwordField:UITextField!
@@ -22,7 +22,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.accessibilityIdentifier = AccessabilityRoot.View
         setElements()
         
         errorLabel.alpha = 0

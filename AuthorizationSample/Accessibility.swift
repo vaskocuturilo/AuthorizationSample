@@ -43,5 +43,10 @@ enum Accessibility {
             public static let View = wrapIdentifier("View")
             
         }
+        
+        public enum SignUp: AccessibilityEnum {
+            // root view
+            public static let View = wrapIdentifier("View")
+        }
     }
 }

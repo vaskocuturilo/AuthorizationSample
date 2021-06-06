@@ -1,5 +1,5 @@
 //
-//  LoginScreen.swift
+//  SignUpScreen.swift
 //  AuthorizationSampleUITests
 //
 //  Created by Anton Smirnov on 06.06.2021.
@@ -9,8 +9,8 @@
 import Foundation
 import XCTest
 
-fileprivate let AccessabilityRoot = Accessibility.Screen.Login.self
-class LoginScreen: AuthorizationPageObject {
+fileprivate let AccessabilityRoot = Accessibility.Screen.SignUp.self
+class SignUpScreen: AuthorizationPageObject {
     
     override var root: XCUIElement {
         return self.application.otherElements[AccessabilityRoot.View]
