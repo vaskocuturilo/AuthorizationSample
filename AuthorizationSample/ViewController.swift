@@ -13,27 +13,24 @@ import Firebase
 
 fileprivate let AccessibilityRoot = Accessibility.Screen.Root.self
 class ViewController: UIViewController {
-    
-    
     @IBOutlet weak var logInButton:UIButton!
     @IBOutlet weak var facebookLogin:UIButton!
     @IBOutlet weak var signUpButton:UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setElementsDesign()
         view.accessibilityIdentifier = AccessibilityRoot.View
-        
     }
     
-    
     func setElementsDesign(){
-        
         Utilities.styleFilledButton(logInButton)
         Utilities.styleFilledButton(facebookLogin)
         Utilities.styleHollowButton(signUpButton)
+        logInButton.accessibilityIdentifier = AccessibilityRoot.LoginButton
+        signUpButton.accessibilityIdentifier = AccessibilityRoot.SignUpButton
+        facebookLogin.accessibilityIdentifier = AccessibilityRoot.FacebookButton
     }
     
     func transitionToHome() {
@@ -49,12 +46,12 @@ class ViewController: UIViewController {
             
             if let error = error {
                 print(error.localizedDescription)
-            return
+                return
             }
             
             guard let accessToken = AccessToken.current else {
                 print("Failed to get access token")
-            return
+                return
             }
             
             let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)

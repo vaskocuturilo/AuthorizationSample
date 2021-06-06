@@ -32,7 +32,6 @@ class SignUpViewController: UIViewController {
         clickLabel.addGestureRecognizer(tap)
     }
     
-    
     func validateFields() -> String? {
         
         if nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -70,11 +69,9 @@ class SignUpViewController: UIViewController {
             return
         }
         navigationController?.pushViewController(viewController, animated: true)
-        
     }
     
     @IBAction func signUpTapped() {
-        
         let error = validateFields()
         
         if error != nil {
@@ -100,13 +97,11 @@ class SignUpViewController: UIViewController {
                 self.transitionToHome()
             }
         }
-        
     }
     
     func showError(_ message:String){
         errorLabel.text = message
         errorLabel.alpha = 1
-        
     }
     
     func transitionToHome(){
@@ -115,5 +110,4 @@ class SignUpViewController: UIViewController {
         view.window?.rootViewController = homeController
         view.window?.makeKeyAndVisible()
     }
-    
 }

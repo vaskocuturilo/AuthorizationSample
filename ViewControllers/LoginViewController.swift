@@ -11,6 +11,7 @@ import Firebase
 import FacebookCore
 import FacebookLogin
 
+fileprivate let AccessabilityRoot = Accessibility.Screen.Login.self
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailField:UITextField!
@@ -21,7 +22,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.accessibilityIdentifier = AccessabilityRoot.View
         setElements()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.handleTap))
@@ -29,7 +30,6 @@ class LoginViewController: UIViewController {
         clickLabel.addGestureRecognizer(tap)
         errorLabel.alpha = 0
     }
-    
     
     func setElements() {
         Utilities.styleTextField(emailField)
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController {
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
-               
+                
                 self.transitionToHome()
             }
         }

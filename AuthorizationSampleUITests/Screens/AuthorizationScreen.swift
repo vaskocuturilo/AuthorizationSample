@@ -14,6 +14,7 @@ final class AuthorizationScreen {
     init(container: AuthorizationTestCaseContainer) {
         self.container = container
     }
-      
-     lazy var rootScreen = RootScreen(application: container.application)
+    
+    lazy var rootScreen = RootScreen(application: container.application)
+    lazy var loginScreen = LoginScreen(application: container.application)
 }
