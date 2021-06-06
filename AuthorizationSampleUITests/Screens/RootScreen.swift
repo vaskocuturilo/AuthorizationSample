@@ -19,7 +19,15 @@ class RootScreen: AuthorizationPageObject {
         return self.application.buttons[AccessibilityRoot.LoginButton]
     }
     
+    public var signUpButton :XCUIElement {
+        return self.application.buttons[AccessibilityRoot.SignUpButton]
+    }
+    
     public func tapLoginButton() {
         loginButton.tap()
+    }
+    
+    public func tapSignUpButton() {
+        signUpButton.tap()
     }
 }
