@@ -38,4 +38,8 @@ class RootScreen: AuthorizationPageObject {
     public func tapSignUpButton() {
         signUpButton.tap()
     }
+    
+    public func tapFacebookButton() {
+        facebookButton.tap()
+    }
 }
