@@ -35,7 +35,14 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(emailField)
         Utilities.styleTextField(passwordField)
         
+        emailField.isAccessibilityElement = true
+        emailField.accessibilityIdentifier = AccessabilityRoot.EmailField
+        
+        passwordField.isAccessibilityElement = true
+        passwordField.accessibilityIdentifier = AccessabilityRoot.PasswordField
+        
         Utilities.styleFilledButton(loginButton)
+        loginButton.accessibilityIdentifier = AccessabilityRoot.LoginButton
     }
     
     @objc func handleTap(sender:UITapGestureRecognizer) {
@@ -47,7 +54,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTapped() {
-        
         let email = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         

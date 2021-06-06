@@ -18,6 +18,6 @@ class CheckPreconditionsTest: AuthorizationTestCase {
         XCTAssert(screens.rootScreen.facebookButton.exists)
         XCTAssert(screens.rootScreen.signAnonymouseButton.exists)
 
-        XCTAssert(screens.rootScreen.root.exists, "Root screem must be open")
+        XCTAssert(screens.rootScreen.root.exists, "Main screen must be open")
     }
 }

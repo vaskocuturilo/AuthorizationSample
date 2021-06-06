@@ -43,11 +43,24 @@ enum Accessibility {
             // root view
             public static let View = wrapIdentifier("View")
             
+            // Fields on login page
+            public static let EmailField = wrapIdentifier("EmailField")
+            public static let PasswordField = wrapIdentifier("PasswordField")
+            public static let LoginButton = wrapIdentifier("LoginButton")
+            
         }
         
         public enum SignUp: AccessibilityEnum {
             // root view
             public static let View = wrapIdentifier("View")
+        }
+        
+        public enum Logout: AccessibilityEnum {
+            // root view
+            public static let View = wrapIdentifier("View")
+            
+            // Button on logout page
+            public static let LogoutButton = wrapIdentifier("LogoutButton")
         }
     }
 }

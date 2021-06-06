@@ -11,6 +11,7 @@ import Firebase
 import FacebookLogin
 import FacebookCore
 
+fileprivate let AccessabilityRoot = Accessibility.Screen.Logout.self
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel:UILabel!
@@ -18,6 +19,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = AccessabilityRoot.View
         
         setElements()
     }
@@ -25,6 +27,7 @@ class HomeViewController: UIViewController {
     func setElements() {
         
         Utilities.styleFilledButton(logoutButton)
+        logoutButton.accessibilityIdentifier = AccessabilityRoot.LogoutButton
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
