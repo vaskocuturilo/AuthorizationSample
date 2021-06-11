@@ -25,7 +25,7 @@ You will need the following technologies available to try it out:
 
 ### Ho w to run
 
-```.```
+```xcodebuild test -workspace AuthorizationSample.xcworkspace -scheme AuthorizationSample -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.0' -resultBundlePath TestResults```
 
 - [x] ability to run tests for different browsers/os by configuring;
 - [x] ability to run tests for different environments(urls) by configuring/by command-line.
@@ -34,11 +34,11 @@ You will need the following technologies available to try it out:
 
 ### Generate Allure report 
 
-```xcresults export /path/to/Test.xcresult /path/to/outputDirectory```
+```./xcresults export TestResults.xcresult/ outputDirectory```
 
 ### Open Allure report in browser
 
-```allure serve /path/to/outputDirectory```
+```allure serve outputDirectory/```
 
 
 ![](https://d.radikal.ru/d21/2104/7e/846e151dbe68.png) 
@@ -46,3 +46,5 @@ You will need the following technologies available to try it out:
 ![](https://b.radikal.ru/b10/2006/59/954d84d137fd.png)
 
 ![](https://b.radikal.ru/b02/2006/4d/d27d2999a522.png)
+
+![](https://b.radikal.ru/b24/2106/62/17255f025b74.png)
