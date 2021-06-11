@@ -41,10 +41,6 @@ You will need the following technologies available to try it out:
 ```allure serve outputDirectory/```
 
 
-![](https://d.radikal.ru/d21/2104/7e/846e151dbe68.png) 
-
-![](https://b.radikal.ru/b10/2006/59/954d84d137fd.png)
-
-![](https://b.radikal.ru/b02/2006/4d/d27d2999a522.png)
+![](https://d.radikal.ru/d32/2106/a0/a3b1d287548e.png) 
 
 ![](https://b.radikal.ru/b24/2106/62/17255f025b74.png)
