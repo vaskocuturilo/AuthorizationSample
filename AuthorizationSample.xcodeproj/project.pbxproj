@@ -24,6 +24,12 @@
 		722EE10F2498A0C4000E4839 /* roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722EE10C2498A0A3000E4839 /* roboto_regular.ttf */; };
 		72592AA22498ECF400A2463D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA12498ECF400A2463D /* SignUpViewController.swift */; };
 		72592AA42498ED0500A2463D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72592AA32498ED0500A2463D /* LoginViewController.swift */; };
+		725DB7412674A275007D46A3 /* SimpleLoginPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DB7402674A275007D46A3 /* SimpleLoginPageObjectTest.swift */; };
+		725DB7462674A2E8007D46A3 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DB7452674A2E8007D46A3 /* BaseTestCase.swift */; };
+		725DB74C2674A35B007D46A3 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DB74B2674A35B007D46A3 /* LoginPage.swift */; };
+		725DB7502674A3F1007D46A3 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DB74F2674A3F1007D46A3 /* MessagePage.swift */; };
+		725DB7562674A874007D46A3 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DB7552674A874007D46A3 /* MainPage.swift */; };
+		725DB75A2674AC07007D46A3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DB7592674AC07007D46A3 /* Page.swift */; };
 		726FD8BE266D4BE200E4784A /* LogoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FD8BD266D4BE200E4784A /* LogoutScreen.swift */; };
 		729D0015249FAEB200DFC746 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D0014249FAEB200DFC746 /* Constans.swift */; };
 		72B50663249F9AFE00909B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72B50662249F9AFE00909B32 /* GoogleService-Info.plist */; };
@@ -72,6 +78,12 @@
 		7246ADFF24B60024007D63AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72592AA12498ECF400A2463D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		72592AA32498ED0500A2463D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		725DB7402674A275007D46A3 /* SimpleLoginPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginPageObjectTest.swift; sourceTree = "<group>"; };
+		725DB7452674A2E8007D46A3 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		725DB74B2674A35B007D46A3 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		725DB74F2674A3F1007D46A3 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
+		725DB7552674A874007D46A3 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		725DB7592674AC07007D46A3 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		726FD8BD266D4BE200E4784A /* LogoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutScreen.swift; sourceTree = "<group>"; };
 		729D0014249FAEB200DFC746 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		72B50662249F9AFE00909B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -111,6 +123,7 @@
 		721ED9572497DB4C00058636 = {
 			isa = PBXGroup;
 			children = (
+				725DB7442674A29A007D46A3 /* PageObject */,
 				72C6B2262644415800821B6E /* Utils */,
 				72592AA02498ECDB00A2463D /* ViewControllers */,
 				722EE10B2498A087000E4839 /* Fonts */,
@@ -188,6 +201,18 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		725DB7442674A29A007D46A3 /* PageObject */ = {
+			isa = PBXGroup;
+			children = (
+				725DB7452674A2E8007D46A3 /* BaseTestCase.swift */,
+				725DB74B2674A35B007D46A3 /* LoginPage.swift */,
+				725DB74F2674A3F1007D46A3 /* MessagePage.swift */,
+				725DB7552674A874007D46A3 /* MainPage.swift */,
+				725DB7592674AC07007D46A3 /* Page.swift */,
+			);
+			path = PageObject;
+			sourceTree = "<group>";
+		};
 		72C6B2242644412300821B6E /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +250,7 @@
 				72284550266CF38100D6AD32 /* SimpleSignUpTest.swift */,
 				72284562266D17BF00D6AD32 /* SimpleFacebookTest.swift */,
 				72D5AD6B2673492100A365FC /* SimpleLoginWithoutPatternTest.swift */,
+				725DB7402674A275007D46A3 /* SimpleLoginPageObjectTest.swift */,
 			);
 			path = SimpleTests;
 			sourceTree = "<group>";
@@ -419,16 +445,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C6B20926443EFA00821B6E /* RootScreen.swift in Sources */,
+				725DB7412674A275007D46A3 /* SimpleLoginPageObjectTest.swift in Sources */,
 				72D5AD712673496100A365FC /* BaseClass.swift in Sources */,
 				72C6B1FB26443E3000821B6E /* AuthorizationTestCase.swift in Sources */,
 				72284551266CF38100D6AD32 /* SimpleSignUpTest.swift in Sources */,
 				72284543266CE0A100D6AD32 /* SimpleLoginTest.swift in Sources */,
+				725DB7462674A2E8007D46A3 /* BaseTestCase.swift in Sources */,
+				725DB7502674A3F1007D46A3 /* MessagePage.swift in Sources */,
 				72D5AD6C2673492100A365FC /* SimpleLoginWithoutPatternTest.swift in Sources */,
 				72C6B20426443E7700821B6E /* AuthorizationTestCaseContainer.swift in Sources */,
 				72284547266CE14700D6AD32 /* LoginScreen.swift in Sources */,
+				725DB75A2674AC07007D46A3 /* Page.swift in Sources */,
+				725DB74C2674A35B007D46A3 /* LoginPage.swift in Sources */,
 				72C6B20E26443F2C00821B6E /* AuthorizationPageObject.swift in Sources */,
 				72284563266D17BF00D6AD32 /* SimpleFacebookTest.swift in Sources */,
 				72C6B22A264441E700821B6E /* CheckPreconditionsTest.swift in Sources */,
+				725DB7562674A874007D46A3 /* MainPage.swift in Sources */,
 				72C6B2522644448500821B6E /* Accessibility.swift in Sources */,
 				72C6B21526443F7800821B6E /* AuthorizationScreen.swift in Sources */,
 				72284555266CF40800D6AD32 /* SignUpScreen.swift in Sources */,
